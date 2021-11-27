@@ -1,0 +1,157 @@
+@import "../styles/partials/socials";
+@import "../styles/partials/overview";
+@import "../styles/partials/theme";
+@import "../styles/partials/media";
+$green: hsl(163, 72%, 41%);
+$red: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$youtube: hsl(348, 97%, 39%);
+body {
+  padding: 2rem;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  font-size: 14px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+p {
+  font-weight: 600;
+}
+
+.followers {
+  font-weight: 400;
+}
+header {
+  max-width: 90rem;
+  margin: auto;
+  .header {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      margin-top: -1rem;
+    }
+  }
+  .theme-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+main {
+  max-width: 90rem;
+  margin: auto;
+  .socials {
+    width: 100%;
+    padding: 2rem 0;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .facebook {
+    border-top: 4px solid $facebook;
+  }
+  .twitter {
+    border-top: 4px solid $twitter;
+  }
+  .instagram {
+    border-top: 4px solid;
+    border-color: hsl(329, 70%, 58%);
+  }
+  .youtube {
+    border-top: 4px solid $youtube;
+  }
+  .card {
+    text-align: center;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 5px;
+    .social_handle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+    h2 {
+      font-size: 4rem;
+      margin: 1rem 0 0 0;
+    }
+    .up {
+      color: $green;
+    }
+    .down {
+      color: $red;
+    }
+    .user_count {
+      display: flex;
+      gap: 0.3rem;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 16px;
+      }
+    }
+  }
+  .overview {
+    h2 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    section {
+      padding: 1rem 0;
+      display: grid;
+      gap: 1rem;
+      justify-content: center;
+      .over_card {
+        padding: 1rem 2rem;
+        min-width: 250px;
+        max-width: 300px;
+        border-radius: 10px;
+        .views {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .numbers {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h2 {
+            font-size: xx-large;
+          }
+          p {
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+            padding-top: 1.3rem;
+          }
+        }
+        .up {
+          color: $green;
+        }
+        .down {
+          color: $red;
+        }
+        .user_count {
+          display: flex;
+          gap: 0.3rem;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+}

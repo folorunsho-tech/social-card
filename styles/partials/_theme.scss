@@ -1,0 +1,187 @@
+/** LIGHT THEME START**/
+$toggle_bg_light: hsl(230, 22%, 74%);
+$toggle_circle_light: hsl(0, 0%, 100%);
+$body_bg_light: hsl(0, 0%, 100%);
+$top_line_light: hsl(225, 100%, 98%);
+$card_bg_light: hsl(227, 47%, 96%);
+$main_text_light: hsl(228, 12%, 44%);
+$numbers_text_light: hsl(230, 17%, 14%);
+/** LIGHT THEME END**/
+
+/** DARK THEME START**/
+$toggle_circle_dark: hsl(230, 17%, 14%);
+$toggle_bg_dark: linear-gradient(
+  from left hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+);
+$body_bg_dark: hsl(230, 17%, 14%);
+$top_line_dark: hsl(232, 19%, 15%);
+$card_bg_dark: hsl(228, 28%, 20%);
+$main_text_dark: hsl(228, 34%, 66%);
+$numbers_text_dark: hsl(0, 0%, 100%);
+/** DARK THEME END**/
+
+// Light Theme Styles Starts
+body {
+  background-color: $body_bg_light;
+  h2 {
+    color: $numbers_text_light;
+  }
+  p {
+    color: $main_text_light;
+  }
+  header {
+    hr {
+      color: $top_line_light;
+    }
+    h2 {
+      color: $numbers_text_light;
+    }
+    .theme-switch {
+      p {
+        color: $main_text_light;
+      }
+    }
+  }
+  main {
+    .socials {
+      .card {
+        background-color: $card_bg_light;
+        h2 {
+          color: $numbers_text_light;
+        }
+      }
+      .card:hover {
+        cursor: pointer;
+        background-color: $toggle_bg_light;
+        transition: all 0.3s ease;
+      }
+      .social_handle {
+        color: $main_text_light;
+      }
+    }
+    .overview {
+      h2 {
+        color: $main_text_light;
+      }
+      .over_card {
+        background-color: $card_bg_light;
+        h2 {
+          color: $numbers_text_light;
+        }
+      }
+      .over_card:hover {
+        cursor: pointer;
+        background-color: $toggle_bg_light;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+.theme-switch {
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  div {
+    margin-top: -1rem;
+  }
+  label {
+    display: block;
+    width: 7em;
+    height: 3em;
+    background-color: $toggle_bg_light;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    // box-shadow: 0 0 20px #477a8550;
+  }
+
+  label::after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    background-color: $toggle_circle_light;
+    position: absolute;
+    border-radius: 70px;
+    top: 8px;
+    left: 15px;
+    transition: 0.5s;
+  }
+  input:checked + label:after {
+    left: calc(100% - 10px);
+    transform: translateX(-100%);
+  }
+  input:checked + label {
+    background-color: $card_bg_dark;
+  }
+  label:active::after {
+    width: 60px;
+  }
+}
+// Light Theme Styles End
+
+// Dark Theme Styles Starts
+.dark {
+  .attribution {
+    color: $numbers_text_dark;
+  }
+  .attribution a {
+    color: $main_text_dark;
+  }
+  background-color: $body_bg_dark;
+  h2 {
+    color: $numbers_text_dark;
+  }
+  p {
+    color: $main_text_dark;
+  }
+  header {
+    hr {
+      color: $top_line_dark;
+    }
+    h2 {
+      color: $numbers_text_dark;
+    }
+    .theme-switch {
+      p {
+        color: $numbers_text_dark;
+      }
+    }
+  }
+  main {
+    .socials {
+      .card {
+        background-color: $card_bg_dark;
+        h2 {
+          color: $numbers_text_dark;
+        }
+      }
+      .card:hover {
+        cursor: pointer;
+        background-color: $top_line_dark;
+        transition: all 0.3s ease;
+      }
+      .social_handle {
+        color: $main_text_dark;
+      }
+    }
+    .overview {
+      h2 {
+        color: $numbers_text_dark;
+      }
+      .over_card {
+        background-color: $card_bg_dark;
+        h2 {
+          color: $numbers_text_dark;
+        }
+      }
+      .over_card:hover {
+        cursor: pointer;
+        background-color: $top_line_dark;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

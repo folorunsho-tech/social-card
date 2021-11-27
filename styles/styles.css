@@ -1,0 +1,476 @@
+/** LIGHT THEME START**/
+/** LIGHT THEME END**/
+/** DARK THEME START**/
+/** DARK THEME END**/
+body {
+  background-color: white;
+}
+
+body h2 {
+  color: #1e202a;
+}
+
+body p {
+  color: #63687e;
+}
+
+body header hr {
+  color: #f5f7ff;
+}
+
+body header h2 {
+  color: #1e202a;
+}
+
+body header .theme-switch p {
+  color: #63687e;
+}
+
+body main .socials .card {
+  background-color: #f0f2fa;
+}
+
+body main .socials .card h2 {
+  color: #1e202a;
+}
+
+body main .socials .card:hover {
+  cursor: pointer;
+  background-color: #aeb3cb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body main .socials .social_handle {
+  color: #63687e;
+}
+
+body main .overview h2 {
+  color: #63687e;
+}
+
+body main .overview .over_card {
+  background-color: #f0f2fa;
+}
+
+body main .overview .over_card h2 {
+  color: #1e202a;
+}
+
+body main .overview .over_card:hover {
+  cursor: pointer;
+  background-color: #aeb3cb;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.theme-switch input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.theme-switch div {
+  margin-top: -1rem;
+}
+
+.theme-switch label {
+  display: block;
+  width: 7em;
+  height: 3em;
+  background-color: #aeb3cb;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.theme-switch label::after {
+  content: "";
+  width: 2em;
+  height: 2em;
+  background-color: white;
+  position: absolute;
+  border-radius: 70px;
+  top: 8px;
+  left: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.theme-switch input:checked + label:after {
+  left: calc(100% - 10px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.theme-switch input:checked + label {
+  background-color: #252a41;
+}
+
+.theme-switch label:active::after {
+  width: 60px;
+}
+
+.dark {
+  background-color: #1e202a;
+}
+
+.dark .attribution {
+  color: white;
+}
+
+.dark .attribution a {
+  color: #8b97c6;
+}
+
+.dark h2 {
+  color: white;
+}
+
+.dark p {
+  color: #8b97c6;
+}
+
+.dark header hr {
+  color: #1f212e;
+}
+
+.dark header h2 {
+  color: white;
+}
+
+.dark header .theme-switch p {
+  color: white;
+}
+
+.dark main .socials .card {
+  background-color: #252a41;
+}
+
+.dark main .socials .card h2 {
+  color: white;
+}
+
+.dark main .socials .card:hover {
+  cursor: pointer;
+  background-color: #1f212e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dark main .socials .social_handle {
+  color: #8b97c6;
+}
+
+.dark main .overview h2 {
+  color: white;
+}
+
+.dark main .overview .over_card {
+  background-color: #252a41;
+}
+
+.dark main .overview .over_card h2 {
+  color: white;
+}
+
+.dark main .overview .over_card:hover {
+  cursor: pointer;
+  background-color: #1f212e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 650px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .theme-switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header hr {
+    display: none;
+  }
+  main .socials {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main .overview h2 {
+    text-align: left !important;
+  }
+  main .overview section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  main .socials {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .overview section {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main .socials {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main .overview section {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+body {
+  padding: 2rem;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+p {
+  font-weight: 600;
+}
+
+.followers {
+  font-weight: 400;
+}
+
+header {
+  max-width: 90rem;
+  margin: auto;
+}
+
+header .header h2 {
+  font-size: 2rem;
+}
+
+header .header p {
+  margin-top: -1rem;
+}
+
+header .theme-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  max-width: 90rem;
+  margin: auto;
+}
+
+main .socials {
+  width: 100%;
+  padding: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .facebook {
+  border-top: 4px solid #198ff5;
+}
+
+main .twitter {
+  border-top: 4px solid #1ca0f2;
+}
+
+main .instagram {
+  border-top: 4px solid;
+  border-color: #df4996;
+}
+
+main .youtube {
+  border-top: 4px solid #c4032a;
+}
+
+main .card {
+  text-align: center;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+main .card .social_handle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.6rem;
+}
+
+main .card h2 {
+  font-size: 4rem;
+  margin: 1rem 0 0 0;
+}
+
+main .card .up {
+  color: #1db489;
+}
+
+main .card .down {
+  color: #dc414c;
+}
+
+main .card .user_count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .card .user_count img {
+  width: 16px;
+}
+
+main .overview h2 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+main .overview section {
+  padding: 1rem 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .overview section .over_card {
+  padding: 1rem 2rem;
+  min-width: 250px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+main .overview section .over_card .views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .overview section .over_card .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .overview section .over_card .numbers h2 {
+  font-size: xx-large;
+}
+
+main .overview section .over_card .numbers p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.3rem;
+}
+
+main .overview section .over_card .up {
+  color: #1db489;
+}
+
+main .overview section .over_card .down {
+  color: #dc414c;
+}
+
+main .overview section .over_card .user_count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .overview section .over_card .user_count img {
+  width: 16px;
+}
+/*# sourceMappingURL=styles.css.map */
